@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    height: 100%;
+}
+
+header#main-header {
+    height: 64px;
+    padding: 15px;
+    border-bottom: 1px solid #ECEFF1;
+}
+
+
+header#main-header .content{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header#main-header .search {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 100%;
+}
+
+header#main-header .search .menu {
+    min-width: 238px;
+    display: flex;
+    align-items: center;
+}
+
+
+header#main-header .search .menu .logo{
+   padding-right: 30px;
+}
+
+header#main-header .search .menu img{
+ margin-right: 20px;
+}
+
+header#main-header .search input {
+   height: 46px;
+   width: 835px;
+   border: none;
+   background:  url('images/search.svg') 10px center, url('images/arrow-down.svg') 800px center;
+   background-color: #F1F3F4;
+   background-repeat: no-repeat;
+   border-radius: 8px;
+   padding: 10px 10px 10px 40px;
+   outline: none;
+   font-size: 16px;
+}
+
+header#main-header .actions ul{
+    display: flex;
+    list-style: none;
+}
+
+
+header#main-header .actions ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header#main-header .actions ul img{
+    width: 22px;
+    height: 22px;
+}
+
+header#main-header .actions ul img.avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+
+header#main-header .actions ul li:first-child{
+    margin-left: 0;
+}
+
+.wrapper-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-content aside.side-menu{
+    padding: 20px 20px 20px 0;
+    width: 256px;
+    height: 275px;
+    border-bottom: 2px solid #ECEFF1;
+}
+
+.wrapper-content aside.side-menu button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px 20px 10px 10px;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    outline: none;
+    box-shadow: 0 0 5px  rgba(0,0,0,0.25);
+    margin-left: 10px;
+}
+.wrapper-content aside.side-menu button img{
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.wrapper-content aside.side-menu button span{
+   font-size: 14px;
+   font-weight: bold;
+   color: #2a2a2a;
+}
+
+.wrapper-content aside.side-menu ul {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.wrapper-content aside.side-menu ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.wrapper-content aside.side-menu ul li.active{
+    background: #FCE8E6;
+    border-top-right-radius: 12px ;
+    border-bottom-right-radius: 12px ;
+    color:  #D93025;
+    font-weight: bold;
+}
+
+.wrapper-content aside.side-menu ul li span{
+    font-size: 14px;
+}
+
+.wrapper-content aside.side-menu ul li span:last-child{
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+
+.wrapper-content aside.side-menu ul li img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.wrapper-content section.inbox{
+    width: 1540px;
+}
+
+.wrapper-content section.inbox .bar{
+    padding: 16px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ECEFF1;
+    width: 100%;
+}
+
+.wrapper-content section.inbox .actions{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-content section.inbox .actions img{
+  margin-right: 20px;
+  width: 15px;
+  height: 15px;
+}
+
+input[type=checkbox] {
+    position: relative;
+      cursor: pointer;
+      margin-right: 10px;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -3px;
+    left: 0;
+    background-color:#FFFFFF;
+    border: 2px solid #808080;
+    border-radius: 4px;
+}
+input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -3px;
+    left: 0;
+    background-color:#808080;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 8px;
+    border: solid #FFFFFF;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0px;
+    left: 6px;
+}
+
+.wrapper-content section.inbox .bar .actions button  {
+    border: none;
+    background: #FFFFFF;
+    outline: none;
+}
+
+.wrapper-content section.inbox .bar .info {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-content section.inbox .bar .info span {
+   font-size: 13px;
+   font-weight: lighter;
+   color: #808080;
+}
+
+.wrapper-content section.inbox .bar .info span.enter-tool {
+    font-size: 16px;
+    
+    color: #808080;
+ }
+
+ 
+
+.wrapper-content section.inbox .bar .info img {
+  width: 18px;
+  height: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.wrapper-content section.inbox .bar .info > img {
+    margin-right:16px;
+}
+
+
+.wrapper-content section.inbox .bar .info img:last-child {
+    margin: 0;
+    width: 12px;
+    height: 12px;
+}
+
+.wrapper-content section.inbox .bar .info button {
+   display: flex;
+   border: none;
+   background: #FFFFFF;
+   outline: none;
+}
+
+.wrapper-content section.inbox .tags {
+    padding: 0px 16px;
+    display: flex;
+    height: 56px;
+    border-bottom: 1px solid #ECEFF1;
+}
+
+.wrapper-content section.inbox .tags ul {
+    list-style: none;
+    display: flex;  
+    align-items: center;
+    height: 100%;
+}
+
+.wrapper-content section.inbox .tags ul li{
+    display: flex;  
+    align-items: center;
+    width: 251px;
+    margin-right: 20px;
+}
+
+.wrapper-content section.inbox .tags ul li.active{
+    color: #D93025;
+    position: relative;
+}
+.wrapper-content section.inbox ul li.active::after{
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: -18px;
+    left: -5px;
+    width: 100%;
+    background: #D93025;
+}
+
+
+.wrapper-content section.inbox .tags ul li img{
+    margin-right: 20px;
+}
+
+
+.wrapper-content section.inbox .tags ul li .title{
+    display: flex;  
+    flex-direction: column;
+}
+
+.wrapper-content section.inbox .tags ul li .title strong{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.wrapper-content section.inbox .tags ul li .title span{
+    font-size: 13px;
+    color: #808080;
+}
+
+.wrapper-content section.inbox .tags ul li .title span.badge{
+    padding: 0.5px;
+    margin-left: 5px;
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
+.wrapper-content section.inbox .tags ul li .title span.badge.green{
+    background-color: #188038;
+}
+
+.wrapper-content section.inbox .tags ul li .title span.badge.blue{
+    background-color: #1A73E8;
+}
+
+.wrapper-content section.inbox .emails {
+    display: flex;
+    height: 45px;
+}
+
+.wrapper-content section.inbox .emails ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+
+
+.wrapper-content section.inbox .emails ul li{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #ECEFF1;
+  padding: 10px 16px;
+}
+
+
+.wrapper-content section.inbox .emails ul li .main-mail{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1 0;
+}
+.wrapper-content section.inbox .emails ul li .main-mail img{
+   margin-left: 20px;
+}
+
+
+.wrapper-content section.inbox .emails ul li .info{
+    width: 100%;
+display: flex;
+justify-content: space-between;
+
+}
+
+
+.wrapper-content section.inbox .emails ul li .info p{
+   margin-left: 10px;
+}
+
+.wrapper-content section.inbox .emails ul li .info strong{
+    margin-left: 20px;
+}
+
+
+.wrapper-content section.inbox .emails ul li .info span{
+    font-size: 12px;
+    font-weight: bold;
+}
+.wrapper-content aside.tools{
+    height: 100%;
+    padding: 10px;
+    border-left: 1px solid #ECEFF1;
+}
+
+.wrapper-content aside.tools ul{
+    list-style: none;
+}
+
+.wrapper-content aside.tools ul li img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.wrapper-content aside.tools ul li:last-child{
+    border-top: 1px solid #ECEFF1;
+  
+}
+ 
+
+
+
+
+
+
+
+
+
+
